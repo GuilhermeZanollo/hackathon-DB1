@@ -3,23 +3,22 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon ./src/app.js"
   },
-  "keywords": [],
+  "prisma": {
+    "seed": "node ./prisma/seed.js"
+  },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "dotenv": "^16.4.5",
+    "@prisma/client": "^5.14.0",
+    "cors": "^2.8.5",
     "express": "^4.19.2",
-    "mysql2": "^3.9.7"
+    "nodemon": "^3.1.2"
   },
   "devDependencies": {
-    "@eslint/js": "^9.3.0",
-    "eslint": "^9.3.0",
-    "globals": "^15.3.0",
-    "nodemon": "^3.1.0"
+    "prisma": "^5.14.0"
+    
   }
 }

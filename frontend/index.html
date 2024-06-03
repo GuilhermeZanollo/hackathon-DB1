@@ -27,7 +27,7 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="header-inner-content">
+      <div class="header-inner-content show-menu">
         <h1 href="http://127.0.0.1:5500/frontend/index.html" class="logo">NetXoes</h1>
         <nav>
           <ul>
@@ -59,7 +59,7 @@
     <main>
       <div class="slide-container swiper">
         <div class="slide-content">
-          <div class="card-wrapper swiper-wrapper">
+          <div id="products-container" class="card-wrapper swiper-wrapper">
             <div class="card swiper-slide">
               <div class="image-content">
                   <span class="overlay"></span>
@@ -181,7 +181,7 @@
             <li>Cupons</li>
             <li>Blog</li>
             <li>Política de Privacidade</li>
-            <li> Torne-se afiliado</li>
+            <li>Torne-se afiliado</li>
           </ul>
         </div>
       </div>
@@ -196,8 +196,7 @@
 
   <!-- Swiper JS -->
   <script src="js/swiper-bundle.min.js"></script>
-
   <!-- JavaScript -->
-  <script src="js/script.js"></script>
-  
+  <script src="js/swiper.js"></script>
+  <script src="js/productListener.js"></script>
 </html>

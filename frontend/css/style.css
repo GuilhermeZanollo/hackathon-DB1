@@ -143,6 +143,13 @@ nav ul li a:hover{
     }
 }
 
+@media (min-width: 801px) and (max-width: 1280px) {
+    .header-middle-image img{
+        max-width: fit-content;
+
+    }
+}
+
 /* Media Queries Header */
 
 /* Header */
@@ -251,6 +258,11 @@ padding: 40px 0;
 }
 
 /* Media Queries SwiperJS */
+@media (max-width: 800px) {
+    main{
+        width: 800px;
+    }
+}
 
 /* Media Queries SwiperJS */
 
@@ -313,6 +325,13 @@ main{
     border-radius: 10px;
 }
 
+.installments{
+    display: flex;
+    width: 262px;
+    height: 20px;
+    font-size: smaller;
+}
+
 .right-side{
     width: 100%;
     color: black;
@@ -324,7 +343,7 @@ main{
 .product-display-flex{
     width: 400px;
     height: 50px;
-    margin-top: -90px;
+    margin-top: 10px;
 }
 
 .amount{
@@ -343,6 +362,19 @@ main{
     cursor: pointer;
 }
 
+#favoritarBtn{
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #af0fb4;
+    color: #fff;
+    font-size: medium;
+}
+
+#favoritarBtn:hover{
+    background-color: #e666eb;
+}
+
 .cart-button{
     text-decoration: none;
     color: #FFF;
@@ -358,6 +390,13 @@ main{
 
 .cart-button:hover{
     background-color: #e666eb;
+}
+
+.description-product1{
+    width: 300px;
+    height: 10px;
+    display: inline-block;
+    margin-bottom: 100px;
 }
 
 /* Main - Product page */
@@ -386,7 +425,7 @@ main{
     align-items: center;
     color: #bebaba;
     height: 200px;
-    width: 1519px;
+    width: 1px;
     gap: 7rem;
 }
 
@@ -423,7 +462,7 @@ main{
 }
 
 .links-footer{
-    margin-left: 500px;
+    margin-left: -500px;
 }
 
 .links-footer h3:first-child{
@@ -453,5 +492,44 @@ main{
     padding: 2rem 0;
     text-align: center;
 }
+
+/* Media Queries - Footer */
+@media (max-width: 800px){
+
+    footer{
+        width: 800px;
+    }
+
+    .page-inner-content .footer-content{
+        width: 800px;
+        height: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .links-footer{
+        margin-left: 0px;
+    }
+
+    .logo-footer{
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1280px) {
+    .links-footer{
+        margin-left: 5px;
+    }
+
+}
+
+@media (min-width: 1281px) and (max-width: 2200px) {
+    .links-footer{
+        margin-left: 500px;
+    }
+}
+
+/* Media Queries - Footer */
+
 /* Footer */
 
